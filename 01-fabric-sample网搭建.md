@@ -60,7 +60,7 @@ cd fabric-samples/test-network
 ./network.sh up
 ```
 
-改命令创建了两个`peer` 节点，一个`ordering`节点， 改命令默认使用`cryptogen tool` 来启动网络，也可以使用[Certificate Authorities](https://hyperledger-fabric.readthedocs.io/en/latest/test_network.html#bring-up-the-network-with-certificate-authorities)来启动
+改命令创建了两个`peer` 节点，一个`ordering`节点， 默认使用`cryptogen tool` 来启动网络，也可以使用[Certificate Authorities](https://hyperledger-fabric.readthedocs.io/en/latest/test_network.html#bring-up-the-network-with-certificate-authorities)来启动
 
 ```bash
 Using docker and docker-compose
@@ -203,10 +203,6 @@ CST 0001 INFO [chaincodeCmd] chaincodeInvokeOrQuery -> Chaincode invoke successf
 ```bash
 peer chaincode query -C mychannel -n basic -c '{"Args":["GetAllAssets"]}
 ```
-
-
-
-
 
 
 
